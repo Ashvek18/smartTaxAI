@@ -1,0 +1,295 @@
+{
+  "users": {
+    "user@smarttax.ai": {
+      "id": "user_seed_id",
+      "email": "user@smarttax.ai",
+      "name": "Rohan Sharma",
+      "role": "user",
+      "profile": {
+        "age": 32,
+        "riskAppetite": "medium",
+        "salary": {
+          "basic": 650000,
+          "hra": 260000,
+          "specialAllowance": 120000,
+          "lta": 40000,
+          "bonus": 80000,
+          "employerPf": 78000,
+          "professionalTax": 2500,
+          "otherComponents": 10000
+        },
+        "deductions": {
+          "sec80C": 120000,
+          "sec80D": 15000,
+          "nps80CCD1B": 20000,
+          "homeLoanInterest": 0,
+          "educationLoan": 0,
+          "donations": 0,
+          "rentPaid": 180000,
+          "metroCity": true
+        }
+      },
+      "createdAt": "2026-06-14T08:13:37.958Z",
+      "passwordHash": "e606e38b0d8c19b24cf0ee3808183162ea7cd63ff7912dbb22b5e803286b4446"
+    },
+    "admin@smarttax.ai": {
+      "id": "admin_seed_id",
+      "email": "admin@smarttax.ai",
+      "name": "Ananya Iyer",
+      "role": "admin",
+      "profile": {
+        "age": 40,
+        "riskAppetite": "low",
+        "salary": {
+          "basic": 1200000,
+          "hra": 480000,
+          "specialAllowance": 200000,
+          "lta": 50000,
+          "bonus": 150000,
+          "employerPf": 144000,
+          "professionalTax": 2500,
+          "otherComponents": 20000
+        },
+        "deductions": {
+          "sec80C": 150000,
+          "sec80D": 25000,
+          "nps80CCD1B": 50000,
+          "homeLoanInterest": 120000,
+          "educationLoan": 0,
+          "donations": 5000,
+          "rentPaid": 0,
+          "metroCity": false
+        }
+      },
+      "createdAt": "2026-06-14T08:13:37.959Z",
+      "passwordHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
+    },
+    "ashwekpadwal123@gmail.com": {
+      "id": "usr_a7551afe-8979-4fcc-9c28-580d4184181f",
+      "email": "ashwekpadwal123@gmail.com",
+      "name": "Ashvek Padwal",
+      "role": "user",
+      "profile": {
+        "age": 24,
+        "riskAppetite": "medium",
+        "salary": {
+          "basic": 500000,
+          "hra": 200000,
+          "specialAllowance": 100000,
+          "lta": 30000,
+          "bonus": 50000,
+          "employerPf": 60000,
+          "professionalTax": 2500,
+          "otherComponents": 0
+        },
+        "deductions": {
+          "sec80C": 100000,
+          "sec80D": 15000,
+          "nps80CCD1B": 0,
+          "homeLoanInterest": 0,
+          "educationLoan": 0,
+          "donations": 0,
+          "rentPaid": 150000,
+          "metroCity": true
+        }
+      },
+      "createdAt": "2026-06-14T08:22:42.731Z",
+      "passwordHash": "809d7e5abf58edc1ed2f467a4c0f4c8c1079ee95641a68c6c30f6dc5a89b541e"
+    }
+  },
+  "goals": [
+    {
+      "id": "goal_1",
+      "userId": "user_seed_id",
+      "name": "Retirement Fund",
+      "type": "retirement",
+      "targetAmount": 25000000,
+      "targetYears": 25,
+      "monthlyInvestment": 15000,
+      "currentSaved": 450000,
+      "timelineProgress": 15,
+      "suggestedInvestments": [
+        "ELSS Funds",
+        "NPS",
+        "PPF"
+      ]
+    },
+    {
+      "id": "goal_2",
+      "userId": "user_seed_id",
+      "name": "Emergency Fund",
+      "type": "emergency",
+      "targetAmount": 500000,
+      "targetYears": 2,
+      "monthlyInvestment": 12000,
+      "currentSaved": 100000,
+      "timelineProgress": 20,
+      "suggestedInvestments": [
+        "Liquid Mutual Funds",
+        "Tax Saving FDs"
+      ]
+    }
+  ],
+  "config": {
+    "standardDeductionOld": 50000,
+    "standardDeductionNew": 75000,
+    "oldSlabs": [
+      {
+        "min": 0,
+        "max": 250000,
+        "rate": 0
+      },
+      {
+        "min": 250000,
+        "max": 500000,
+        "rate": 0.05
+      },
+      {
+        "min": 500000,
+        "max": 1000000,
+        "rate": 0.2
+      },
+      {
+        "min": 1000000,
+        "max": null,
+        "rate": 0.3
+      }
+    ],
+    "newSlabs": [
+      {
+        "min": 0,
+        "max": 300000,
+        "rate": 0
+      },
+      {
+        "min": 300000,
+        "max": 700000,
+        "rate": 0.05
+      },
+      {
+        "min": 700000,
+        "max": 1000000,
+        "rate": 0.1
+      },
+      {
+        "min": 1000000,
+        "max": 1200000,
+        "rate": 0.15
+      },
+      {
+        "min": 1200000,
+        "max": 1500000,
+        "rate": 0.2
+      },
+      {
+        "min": 1500000,
+        "max": null,
+        "rate": 0.3
+      }
+    ]
+  },
+  "investmentProducts": [
+    {
+      "id": "elss_1",
+      "name": "Equity Linked Savings Schemes (ELSS)",
+      "category": "ELSS",
+      "expectedReturns": 12,
+      "lockInValue": "3 Years",
+      "riskLevel": "High",
+      "taxBenefits": "Deduction under Section 80C (up to ₹1.5L)",
+      "description": "Diverse equity mutual funds with the shortest lock-in period. High wealth generation capacity over long runs."
+    },
+    {
+      "id": "ppf_1",
+      "name": "Public Provident Fund (PPF)",
+      "category": "PPF",
+      "expectedReturns": 7.1,
+      "lockInValue": "15 Years",
+      "riskLevel": "Low",
+      "taxBenefits": "EEE Status - Deduction under 80C & Exempt Returns",
+      "description": "Government-backed long-term saving product offering guaranteed interest rates and risk-free compounding."
+    },
+    {
+      "id": "nps_1",
+      "name": "National Pension Scheme (NPS)",
+      "category": "NPS",
+      "expectedReturns": 9.5,
+      "lockInValue": "Till age 60",
+      "riskLevel": "Medium",
+      "taxBenefits": "Additional ₹50,000 under Section 80CCD(1B)",
+      "description": "Retirement focused product with flexible exposure to equity and corporate/government bonds."
+    },
+    {
+      "id": "fd_1",
+      "name": "Tax Saver Fixed Deposits (5-Year)",
+      "category": "FD",
+      "expectedReturns": 6.8,
+      "lockInValue": "5 Years",
+      "riskLevel": "Low",
+      "taxBenefits": "Deduction under 80C. Interest is taxable",
+      "description": "Safe bank deposit with a fixed rate of returns. Recommended for low-risk appetite users."
+    },
+    {
+      "id": "hl_1",
+      "name": "Home Loan Principal repayment & Interest",
+      "category": "SIP",
+      "expectedReturns": 0,
+      "lockInValue": "No Lock-in",
+      "riskLevel": "Low",
+      "taxBenefits": "Principal under 80C. Interest under Section 24(b)",
+      "description": "Leverage home loan repayments to save taxes while building a permanent real-estate asset."
+    },
+    {
+      "id": "hi_1",
+      "name": "Individual & Family Health Insurance policy",
+      "category": "Health Insurance",
+      "expectedReturns": 0,
+      "lockInValue": "Annual Renewal",
+      "riskLevel": "Low",
+      "taxBenefits": "Deduction under Section 80D (up to ₹25,000 / ₹50,000)",
+      "description": "Critical safety net for self and parents, offering medical protection alongside solid tax savings."
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log_f864c16d-7808-4cc6-975e-94bc7773d8e4",
+      "userId": "usr_a7551afe-8979-4fcc-9c28-580d4184181f",
+      "userEmail": "ashwekpadwal123@gmail.com",
+      "action": "LOGIN",
+      "details": "Logged in successfully to system",
+      "timestamp": "2026-06-14T08:27:41.669Z"
+    },
+    {
+      "id": "log_578b2906-1ef0-4c83-b2d0-9c4ebc756846",
+      "userId": "usr_a7551afe-8979-4fcc-9c28-580d4184181f",
+      "userEmail": "ashwekpadwal123@gmail.com",
+      "action": "FORGOT_PASSWORD",
+      "details": "Triggered password reset simulator",
+      "timestamp": "2026-06-14T08:27:32.136Z"
+    },
+    {
+      "id": "log_fd791581-8bc0-42ad-bcd2-8b6fa4b97cf4",
+      "userId": "usr_a7551afe-8979-4fcc-9c28-580d4184181f",
+      "userEmail": "ashwekpadwal123@gmail.com",
+      "action": "LOGIN",
+      "details": "Logged in successfully to system",
+      "timestamp": "2026-06-14T08:23:00.587Z"
+    },
+    {
+      "id": "log_5d27e7bc-617c-426d-b01d-cd56c7640c8c",
+      "userId": "usr_a7551afe-8979-4fcc-9c28-580d4184181f",
+      "userEmail": "ashwekpadwal123@gmail.com",
+      "action": "REGISTER",
+      "details": "Completed registration",
+      "timestamp": "2026-06-14T08:22:42.733Z"
+    },
+    {
+      "id": "log_2b93f287-7053-4218-b5c6-066965b3414b",
+      "userId": "user_seed_id",
+      "userEmail": "user@smarttax.ai",
+      "action": "LOGIN",
+      "details": "Logged in successfully to system",
+      "timestamp": "2026-06-14T08:14:40.311Z"
+    }
+  ]
+}

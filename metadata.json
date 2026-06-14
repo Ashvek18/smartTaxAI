@@ -1,0 +1,6 @@
+{
+  "name": "SmartTaxAI",
+  "description": "An AI-powered tax optimization and planning platform for Indian salaried employees to compare tax regimes, analyze salary, and optimize investments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
